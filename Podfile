@@ -9,5 +9,5 @@ target 'Template Projects' do
 
   pod 'Reachability'
   pod 'CryptoSwift'
-  pod 'SnapKit'
+  pod 'SnapKit', '~> 3.2.0'
 end
