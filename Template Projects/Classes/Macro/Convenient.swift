@@ -22,6 +22,10 @@ let kNavigationHeight:CGFloat   = 44.0
 /// 导航栏加状态栏高度
 let kStatusBarAndNavigationBarHeight:CGFloat = kStatusBarHeight + kNavigationHeight
 
+/// 是否为 iPhone
+let kIsIPhone: Bool = UIDevice.current.userInterfaceIdiom == .phone ? true : false
+
+
 // MARK: 便捷构造方法
 
 /// 日志输出

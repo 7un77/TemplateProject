@@ -9,5 +9,6 @@ target 'Template Projects' do
 
   pod 'Reachability'
   pod 'CryptoSwift'
-  pod 'SnapKit', '~> 3.2.0'
+  pod 'SnapKit'
+  pod 'IQKeyboardManagerSwift'
 end
