@@ -24,12 +24,12 @@ struct Host {
 }
 
 
-let kThemeColors: UIColor = UIColorFromRGB(rgbValue: 0xA30093)
+let kSRThemeColors: UIColor = UIColorFromRGB(rgbValue: 0xA30093)
 
-let kMainFontColor: UIColor = UIColorFromRGB(rgbValue: 0xFFFFFF)
+let kSRMainFontColor: UIColor = UIColorFromRGB(rgbValue: 0xFFFFFF)
 
-let kTemplateProjectsTitle:String = "Template Projects"
+let kSRTemplateProjectsTitle:String = "Template Projects"
 
-let kAESKey:String = "Po[SBb6cGH}+efcaj{+oESb9d8>Z'e9M"
-let kAESIv:String = "D+c~baceg)b$=pkf"
+let kSRAESKey:String = "Po[SBb6cGH}+efcaj{+oESb9d8>Z'e9M"
+let kSRAESIv:String = "D+c~baceg)b$=pkf"
 

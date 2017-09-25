@@ -10,21 +10,21 @@ import Foundation
 import UIKit
 
 /// 屏幕高度
-let kScreenHeight:CGFloat   = UIScreen.main.bounds.size.height;
+let kSRScreenHeight:CGFloat   = UIScreen.main.bounds.size.height;
 /// 屏幕宽度
-let kScreenWidth:CGFloat    = UIScreen.main.bounds.size.width;
+let kSRScreenWidth:CGFloat    = UIScreen.main.bounds.size.width;
 /// 菜单栏高度
-let kTabbarHeight:CGFloat       = 49.0
+let kSRTabbarHeight:CGFloat       = 49.0
 /// 状态栏高度
-let kStatusBarHeight:CGFloat    = 20.0
+let kSRStatusBarHeight:CGFloat    = 20.0
 /// 导航栏高度
-let kNavigationHeight:CGFloat   = 44.0
+let kSRNavigationHeight:CGFloat   = 44.0
 /// 导航栏加状态栏高度
-let kStatusBarAndNavigationBarHeight:CGFloat = kStatusBarHeight + kNavigationHeight
-
+let kSRStatusBarAndNavigationBarHeight:CGFloat = kSRStatusBarHeight + kSRNavigationHeight
 /// 是否为 iPhone
-let kIsIPhone: Bool = UIDevice.current.userInterfaceIdiom == .phone ? true : false
-
+let kSRIsIPhone: Bool = UIDevice.current.userInterfaceIdiom == .phone ? true : false
+/// 当前系统版本
+let kSRVersion: Float = (UIDevice.current.systemVersion as NSString).floatValue
 
 // MARK: 便捷构造方法
 
@@ -37,7 +37,13 @@ let kIsIPhone: Bool = UIDevice.current.userInterfaceIdiom == .phone ? true : fal
 ///   - line:       行数
 func slog<T>(message: T, file: String = #file, method: String = #function, line: Int = #line) {
     #if DEBUG
-        print("- [\((file as NSString).lastPathComponent)(\(line)) \(method)]\n- \(message)")
+        let dformatter = DateFormatter()
+        
+        dformatter.dateFormat = DateTimeFormatter.Formatter_Default.rawValue
+        
+        let datestr = dformatter.string(from: Date())
+        
+        print("[\(datestr)] - [\((file as NSString).lastPathComponent)(\(line)) \(method)]\n- \(message)")
     #endif
 }
 
