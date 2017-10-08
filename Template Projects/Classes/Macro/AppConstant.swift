@@ -14,13 +14,13 @@ struct Host {
     //    static let host:String = "http://192.168.1.187"
     
     /// debug
-    static let host:String = "http://192.168.3.24"
+    static let base:String = "http://192.168.3.24"
     
     /// port
     static let port:String = ":8111"
     
     /// url
-    static let url:String = host + port
+    static let url:String = base + port
 }
 
 

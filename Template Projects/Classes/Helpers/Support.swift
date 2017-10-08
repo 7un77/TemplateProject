@@ -26,12 +26,12 @@ class Support {
     /// application log
     fileprivate static func applicationDidStart(){
         
-        debugPrint(" ************************************************************ ")
+        debugPrint(" ************************************************************************************ ")
         debugPrint(" Bundle Display Name:\(Application.name) ")
         debugPrint(" Bundle Short Version:\(Application.version) ")
         debugPrint(" Bundle Version:\(Application.buildVersion) ")
         debugPrint(" Copyright © 2017年 Beijing Zhijian Internet Technology Co. Ltd. All rights reserved. ")
-        debugPrint(" ************************************************************ ")
+        debugPrint(" ************************************************************************************ ")
         print("\n")
         
     }
