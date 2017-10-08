@@ -3,24 +3,36 @@
 //  Template Projects
 //
 //  Created by 黄俊 on 2017/9/25.
-//  Copyright © 2017年 北京智见互联科技有限公司. All rights reserved.
+//  Copyright © 2017年 Beijing Zhijian Internet Technology Co. Ltd. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 /// support service on application
 class Support {
     
     /// network core
-    let net: Net!
+    var net: Net!
     
     init() {
         
         Support.applicationDidStart()
         
-        net = Net()
+        self.net = Net()
         
         slog(message: "the program support component is loaded.")
+    }
+    
+    
+    /// validate first launch status
+    public func initApplicationWindow() -> BaseViewController {
+        
+        if UserDefaults.Application.string(forKey: .lastBoot) != Application.version {
+            UserDefaults.Application.set(value: Application.version, forKey: .lastBoot)
+            return BootViewController()
+        }else {
+            return ViewController()
+        }
     }
     
     /// application log

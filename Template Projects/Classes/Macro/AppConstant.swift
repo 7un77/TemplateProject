@@ -3,7 +3,7 @@
 //  Template Projects
 //
 //  Created by 黄俊 on 2017/8/16.
-//  Copyright © 2017年 http://h94uang@gmail.com. All rights reserved.
+//  Copyright © 2017年 Beijing Zhijian Internet Technology Co. Ltd. All rights reserved.
 //
 
 import UIKit
@@ -32,4 +32,3 @@ let kSRTemplateProjectsTitle:String = "Template Projects"
 
 let kSRAESKey:String = "Po[SBb6cGH}+efcaj{+oESb9d8>Z'e9M"
 let kSRAESIv:String = "D+c~baceg)b$=pkf"
-

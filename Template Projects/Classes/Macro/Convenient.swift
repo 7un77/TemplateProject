@@ -3,7 +3,7 @@
 //  Template Projects
 //
 //  Created by 黄俊 on 2017/8/15.
-//  Copyright © 2017年 http://h94uang@gmail.com. All rights reserved.
+//  Copyright © 2017年 Beijing Zhijian Internet Technology Co. Ltd. All rights reserved.
 //
 
 import Foundation
