@@ -14,7 +14,6 @@ class Support {
     /// network core
     let net: Net!
     
-    
     init() {
         
         Support.applicationDidStart()
@@ -27,16 +26,13 @@ class Support {
     /// application log
     fileprivate static func applicationDidStart(){
         
-        let infoDictionary = Bundle.main.infoDictionary!
-        let appDisplayName = infoDictionary["CFBundleDisplayName"]
-        let majorVersion = infoDictionary["CFBundleShortVersionString"]
-        let minorVersion = infoDictionary["CFBundleVersion"]
         debugPrint(" ************************************************************ ")
-        debugPrint(" Bundle Display Name:\(appDisplayName ?? kSRTemplateProjectsTitle) ")
-        debugPrint(" Bundle Short Version String:\(describing: majorVersion ?? "1.0.0") ")
-        debugPrint(" Bundle Version:\(describing: minorVersion ?? 000000000000) ")
-        debugPrint(" Copyright © 2017年 北京智见互联科技有限公司. All rights reserved. ")
+        debugPrint(" Bundle Display Name:\(Application.name) ")
+        debugPrint(" Bundle Short Version:\(Application.version) ")
+        debugPrint(" Bundle Version:\(Application.buildVersion) ")
+        debugPrint(" Copyright © 2017年 Beijing Zhijian Internet Technology Co. Ltd. All rights reserved. ")
         debugPrint(" ************************************************************ ")
         print("\n")
+        
     }
 }

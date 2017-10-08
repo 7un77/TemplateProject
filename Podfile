@@ -7,8 +7,15 @@ target 'Template Projects' do
 
   # Pods for Template Projects
 
+
+  # 网络监测
   pod 'Reachability'
+  # 加密解密
   pod 'CryptoSwift'
+  # 界面布局
   pod 'SnapKit'
+  # 键盘管理
   pod 'IQKeyboardManagerSwift'
+  # 图片缓存
+  pod 'Kingfisher’
 end
