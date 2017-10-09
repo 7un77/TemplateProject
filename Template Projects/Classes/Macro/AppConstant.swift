@@ -25,10 +25,8 @@ struct Host {
 
 
 let kSRThemeColors: UIColor = UIColorFromRGB(rgbValue: 0xA30093)
-
 let kSRMainFontColor: UIColor = UIColorFromRGB(rgbValue: 0xFFFFFF)
-
-let kSRTemplateProjectsTitle:String = "Template Projects"
-
-let kSRAESKey:String = "Po[SBb6cGH}+efcaj{+oESb9d8>Z'e9M"
-let kSRAESIv:String = "D+c~baceg)b$=pkf"
+let kSRTemplateProjectsTitle: String = "Template Projects"
+let kSRBootImageName: String = "BootImage"
+let kSRAESKey: String = "Po[SBb6cGH}+efcaj{+oESb9d8>Z'e9M"
+let kSRAESIv: String = "D+c~baceg)b$=pkf"

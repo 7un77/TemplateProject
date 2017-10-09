@@ -26,8 +26,7 @@ class Support {
     
     /// validate first launch status
     public func initApplicationWindow() -> BaseViewController {
-        
-        if UserDefaults.Application.string(forKey: .lastBoot) != Application.version {
+        if UserDefaults.Application.string(forKey: .lastBoot) == Application.version {
             UserDefaults.Application.set(value: Application.version, forKey: .lastBoot)
             return BootViewController()
         }else {
